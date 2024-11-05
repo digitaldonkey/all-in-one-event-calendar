@@ -1,6 +1,7 @@
 {
-    "name": "tho/all-in-one-event-calendar",
+    "name": "digitaldonkey/open-source-event-calendar",
     "type": "wordpress-plugin",
+    "description": "Open Source Event Calendar WordPress Plugin",
     "require": {
         "ext-curl": "*",
         "twig/twig": "^3.10",
@@ -9,7 +10,7 @@
         "kigkonsult/icalcreator": "~2.40.0",
         "louis1021/sg-i-calendar": "dev-master"
     },
-    "license": "GPL-v2",
+    "license": "GPL-3.0-or-later",
     "autoload": {
         "psr-4": {
             "Osec\\": "src/"
@@ -27,14 +28,17 @@
         }
     ],
     "require-dev": {
+        "roave/security-advisories": "dev-latest",
         "cweagans/composer-patches": "~1.0",
         "phpunit/phpunit": "^9.6",
         "yoast/phpunit-polyfills": "^2.0",
-        "symfony/debug-bundle": "^7.1"
+        "symfony/debug-bundle": "^7.1",
+        "phpro/grumphp": "^2.9"
     },
     "config": {
         "allow-plugins": {
-            "cweagans/composer-patches": true
+            "cweagans/composer-patches": true,
+            "phpro/grumphp": true
         }
     },
     "extra": {
