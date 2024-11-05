@@ -28,7 +28,7 @@ references:
       - WP_HOST: *WP_HOST
       - WP_ORG_PLUGIN_NAME: *WP_ORG_PLUGIN_NAME
       - WP_ORG_USERNAME: *WP_ORG_USERNAME
-    working_directory: ~/passwords-evolved
+    working_directory: ~/open-source-event-calendar
 
   workspace_root: &workspace_root
                     /tmp
